@@ -98,7 +98,7 @@ class node {
         }
     }
 
-    public void up(int[][] puzzle, int row, int col) // generate a child if we moved the 0 upwards
+    public void up(int[][] puzzle, int row, int col){ // generate a child if we moved the 0 upwards
         if (row > 0) { // the condition is to avoid getting out of bounds
             int temp = puzzle[row][col]; //swapping the 0 with the element upwards
             puzzle[row][col] = puzzle[row - 1][col];
